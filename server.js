@@ -16,6 +16,12 @@ getConnection();
 app.use('/api/genero', require('./routes/genero'));
 // Ruta para Directores
 app.use('/api/director', require('./routes/director'));
+// Ruta para Productoras
+app.use('/api/productora', require('./routes/productora'));
+// Ruta para Tipos
+app.use('/api/tipo', require('./routes/tipo'));
+// Ruta para Media (Películas / Series)
+app.use('/api/media', require('./routes/media'));
 app.listen(port, () => {
     console.log(`Servidor corriendo en el puerto ${port}`);
 });
